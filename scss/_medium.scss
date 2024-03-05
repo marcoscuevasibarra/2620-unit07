@@ -1,0 +1,93 @@
+header {
+
+ padding: 2rem $gutter;  
+ h1 { 
+    font-size: 2rem;
+
+ } 
+}
+nav {
+   height: auto;
+
+   ul {
+       
+       display: flex;
+       justify-content: end;
+   
+
+   }
+
+   ul li a {
+    border: none;
+   }
+   }
+
+   // EMPIEZA EL GRID PARA LAS CUATRO AREAS HEADER, NAV,MAIN Y FOOTER
+// header    
+div#headerWrapper { grid-row-start: 1;
+   border-bottom: 1px solid $decoColor;
+}
+
+// con escribir block aparece telefo y se pone auto para que ocupe el suficiente lugar
+div#phone { display: block;
+justify-self: end;
+
+a { color: $decoColor;
+   text-decoration: none;
+   font-weight: $normalWeight;
+   font-size: 1.5rem;
+}
+a:hover { color: $hoverColor;}
+}
+header { grid-template-columns: 51px auto auto;
+
+}
+
+
+/// termina header
+
+ 
+// EMPIEZA MAIN
+
+
+div#mainWrapper { grid-row-start: 3;}
+
+
+
+
+
+// TERMINA MAIN
+
+// EMPIEZA NAV 
+
+div#navWrapper { grid-row-start: 2;
+height: auto;
+}
+
+// desaparece hamburger icon y x 
+div#hamburger, div#closex { display: none;}
+
+// permanece pero esta sin efecto al no haber display
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .5rem 2vw;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: right;
+}
+
+div#closex { margin-right: 2vw;}
+
+// TERMINA NAV
+
+
+// EMPIEZA FOOTER
+
+div#footerWrapper { grid-row-start: 4;}
+
+
+
+
+// TERMINA FOOTER
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                       
+
+    <title>Document</title>
+    <meta name="description" content="Metropolis University - Academics - Campus Life - Application - Events">
+    <meta name="author" content="Marcos Cuevas">
+
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--   google font- seleccion de font con 300 ,500, 700   -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Cabin+Sketch&family=Chelsea+Market&family=DotGothic16&family=League+Spartan:wght@300;500;700&family=Love+Ya+Like+A+Sister&family=Monofett&family=Monoton&family=Prata&family=Roboto+Mono:wght@100&family=Special+Elite&family=Vast+Shadow&family=Wallpoet&display=swap" rel="stylesheet">
+    
+  <!--   google font- termina   -->  
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    
+
+   <!--   favicon generator icons stuff  se removio slash de link de archivo pero se usa en real world-->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+ <!--   favicon - termina   -->  
+</head>
+<body>
+
+<div id="headerWrapper">
+
+<header>
+   <!--   pixel density - se agraga srcset y las tres logos con 1x,2x,3x del folder   -->  
+<a href="#"><img src="images/LOGO40X39.png" alt="logo" width="40" height="39" srcset="images/LOGO40X39.png 1x, images/LOGO80x78.png 2x, images/LOGO120x117.png 3x"></a>
+
+
+
+    <h1>Metropolis University</h1>
+    
+<div id="hamburger"><a href="#closex">&#9776;</a></div>
+
+<div id="phone"><a href="#">801-533-1122</a></div>
+
+</header>
+</div>
+
+<div id="navWrapper">
+
+    <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
+            <ul>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">MyMetropolis</a></li>
+                <li class="active"><a href="#">Application</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Campus Life</a></li>
+            </ul>
+
+
+    </nav>
+
+</div>
+
+<div id="mainWrapper">
+    <main>
+
+<h1>Application</h1>
+<p>Interested in applying to Metropolis University? Your Enrollment Counselor will make the application process as easy and seamless as possible. Beyond answering questions about your application and available scholarships, they can also provide information on MU and specific degree programs, make sure you have all your needed documents, and help you set your start date. Then enjoy an education that is personalized and on your schedule.</p>
+ 
+ <!-- EMPIEZA FORMA   -->
+
+ <form method="get" action="Thanks.html" class="my-form" autocomplete="on">
+
+   <!-- CAMPOS O ESPACIO PARA LLENAR para informacion de forma   --> 
+
+   <h3>Contact Information</h3>
+    <label >First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+
+    <label >Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+
+    <label >Email: <input type="email" name="email" autocomplete="email" required title="Your Email Please"></label>
+
+    <label >Mobile Phone: <input type="tel" name="phone" autocomplete="tel" required title="Mobile Phone Here"></label>
+
+<!-- CAMPOS O ESPACIO PARA LLENAR - OPCIONALES   --> 
+
+<h3>Opcional Information</h3>
+    <label >Address: <input type="text" name="email" autocomplete="street-address"  title="Address"></label>
+    <label >City: <input type="text" name="email" autocomplete="address-level2"  title="City"></label>
+
+    <label >State: <input type="text" name="email" autocomplete="address-level1"  title="State"></label>
+
+ <label >Zip Code: <input type="number" name="zipcode" autocomplete="postal-code"  title="Zip Code"></label>
+
+
+<!-- seleccion de OPCIONES  para informacion de forma   --> 
+<h3>School Information</h3>
+<label >
+    <select name="condition">
+        <option value="No Selection Made">Studies Status</option>
+        <option value="Unfinished High School">Unfinished High School</option>
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="High School Diploma">High School Diploma</option>
+        <option value="Transference from Foreign Country">Transference from Foreign Country</option>
+
+    </select>
+
+</label>
+
+<label >
+    <select name="condition">
+        <option value="I Do Not Know">Semester For Starting</option>
+        <option value="Spring">Spring</option>
+        <option value="Summer">Summer</option>
+        <option value="Fall">Fall</option>
+        <option value="Next Year">Next Year</option>
+
+    </select>
+
+</label>
+
+<label >Graduation Date<input type="date" name="date" autocomplete="date"></label>
+
+<h3>Comunication Preferences</h3>
+
+<!-- se usa el mismo nombre para no dejar seleccionar mas de uno   --> 
+<label ><input type="radio" name="preference" value="text message">      Text Message</label>
+<label ><input type="radio" name="preference" value="mobile phone">      Mobile Phone</label>
+<label ><input type="radio" name="preference" value="email">      Email</label>
+<label ><input type="radio" name="preference" value="home phone">      Home Phone</label>
+
+<h3>Education Completed</h3>
+<label ><input type="checkbox" name="GED">      GED</label>
+<label ><input type="checkbox" name="High School Diploma">      High School Diploma</label>
+<label ><input type="checkbox" name="Associates Degree">      Associates Degree</label>
+<label ><input type="checkbox" name="Undergraduate">      Undergraduate</label>
+<label ><input type="checkbox" name="Bachelor's Degree">      Bachelor's Degree</label>
+<label ><input type="checkbox" name="Master's Degree">      Master's Degree</label>
+
+<h3>Account User Setting</h3>
+<label >UserName (6 or more)<input type="text" required minlength="6" title="Please enter a UserName with at least 6 characters"></label>
+<!-- pattern usa parentesis cuadrado y llaves - OJO NO SON LOS MISMOS PARENTESIS , TIENEN QUE SER UNO DE CADA UNO   --> 
+<label >Password (5-9 letters or numbers) <input type="password" name="password" required pattern="[A-Z a-z 0-9]{5,9}" title="5-9 Letters or Numbers Please"></label>
+
+
+
+
+<input type="submit" value="Good Choice I Made Today">
+ </form>
+
+    </main>
+
+</div>
+
+<div id="footerWrapper">
+<footer>
+<p> &copy; <span id="year">x</span> &bull;   Marcos Cuevas</p>
+
+
+</footer>
+
+
+
+</div>
+<script src="js/scripts.js"></script>
+   
+    
+</body>
+</html>
